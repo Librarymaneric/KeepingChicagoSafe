@@ -1,0 +1,106 @@
+/* --- Table and Cell Styling (The Layout Engine) --- */
+.kcs-buttons-table {
+    width: 100%; /* Ensure the table fills the container */
+    border-collapse: separate; /* Allows spacing between cells */
+    border-spacing: 10px 0; /* Horizontal spacing between cells (buttons) */
+    table-layout: fixed; /* Ensures equal width calculation is applied across all columns */
+}
+
+.kcs-cell {
+    width: 20%;
+    vertical-align: middle; 
+    padding: 0; 
+}
+
+/* --- Individual Button Styling  --- */
+.nav-button {
+    display: block; 
+    
+    /* Center all content */
+    text-align: center; 
+    
+    /* Appearance */
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 5px; 
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.2s;
+    
+
+    height: 100%;
+    
+    position: relative; 
+}
+
+.button-icon {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.button-text {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    line-height: 1.2;
+    display: block;
+}
+
+.kcs-button-summary {
+    font-size: 0.8em;
+    color:black;
+    padding: 5px;
+    font-style:italic;
+    vertical-align: top;
+    word-wrap: break-word;
+}
+
+/* --- Specific Button Colors (Using IDs for unique coloring) --- */
+#button-kyr {
+    background-color: #007bff;
+}
+#button-detention {
+    background-color: #dc3545;
+}
+#button-safety {
+    background-color: #28a745;
+}
+#button-offline {
+    background-color: #ffc107;
+    color: #343a40;
+}
+
+#button-action {
+    background-color: #6f42c1;
+}
+
+.kyr {
+
+}
+
+.kyr h1 {
+
+}
+
+.kyr img{
+    width:200px;
+    height: auto;
+}
+.triage {
+
+}
+
+#victim.triage {
+
+}
+
+/* maybe switch to action instead of witness */
+#witness.triage {
+
+}
+
+#safety {
+
+}
+
