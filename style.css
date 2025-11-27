@@ -81,7 +81,7 @@ body {
 .button-section {
     padding: 0 10px;
     margin-bottom: 20px;
-    background-color: #696969;
+    background-color:lightgray;
 
 }
 
@@ -236,7 +236,6 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.1em;
-    transition: background-color 0.2s;
 }
 
 /* -- dynamic content area section --*/
@@ -248,8 +247,7 @@ body {
 #failedLoad{
     color: red; 
     padding: 20px; 
-    border: 1px 
-    solid #f8d7da; 
+    border: 1px solid #f8d7da; 
     background-color: #f8d7da; 
     text-align: center;
 }
