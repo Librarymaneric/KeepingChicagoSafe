@@ -1,9 +1,43 @@
-/* --- Table and Cell Styling (The Layout Engine) --- */
+/* -- header area w/ consistent response info -- */
+.running-header {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.img-header-cell {
+    width: 20%;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.salute-header-cell {
+    width: 60%;
+    text-align: left;
+}
+
+.header-image {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.left-image {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.right-image {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Buttons - Table and Cell Styling */
 .kcs-buttons-table {
-    width: 100%; /* Ensure the table fills the container */
-    border-collapse: separate; /* Allows spacing between cells */
-    border-spacing: 10px 0; /* Horizontal spacing between cells (buttons) */
-    table-layout: fixed; /* Ensures equal width calculation is applied across all columns */
+    width: 100%; 
+    border-collapse: separate;
+    border-spacing: 10px 0;
+    table-layout: fixed;
 }
 
 .kcs-cell {
@@ -12,24 +46,14 @@
     padding: 0; 
 }
 
-/* --- Individual Button Styling  --- */
 .nav-button {
     display: block; 
-    
-    /* Center all content */
     text-align: center; 
-    
-    /* Appearance */
-    text-decoration: none;
-    color: #fff;
+    color: white;
     padding: 15px 5px; 
     border-radius: 8px;
     font-family: Arial, sans-serif;
-    transition: background-color 0.2s;
-    
-
     height: 100%;
-    
     position: relative; 
 }
 
@@ -56,7 +80,7 @@
     word-wrap: break-word;
 }
 
-/* --- Specific Button Colors (Using IDs for unique coloring) --- */
+/* --- Specific Button Colors --- */
 #button-kyr {
     background-color: #007bff;
 }
@@ -75,6 +99,7 @@
     background-color: #6f42c1;
 }
 
+/* --- kyr page ---*/
 .kyr {
 
 }
@@ -87,6 +112,8 @@
     width:200px;
     height: auto;
 }
+
+/* --- triage page --- */
 .triage {
 
 }
@@ -95,15 +122,18 @@
 
 }
 
+/* --- witness page --- */
 /* maybe switch to action instead of witness */
 #witness.triage {
 
 }
 
+/* --- safety page --- */
 #safety {
 
 }
 
+/* -- dynamic content area section --*/
 #loading {
     text-align: center; 
     padding: 20px;
