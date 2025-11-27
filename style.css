@@ -131,38 +131,112 @@ body {
 #button-offline { background-color: #8b0000; }
 #button-action { background-color: #8b0000; }
 
-/* --- kyr page ---*/
-.kyr {
-
+/* --- Content area styles ---*/
+#content-area {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px black;
 }
 
-.kyr h1 {
-
+/* --- Headings --- */
+#content-area h1 {
+    color: #8b0000; 
+    border-bottom: 3px solid #696969;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    font-size: 2em;
 }
+
+#content-area h2 {
+    color: #696969; /* Dark gray for subheadings */
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#content-area h3 {
+    color:#696969;
+    font-size: 1.2em;
+}
+
+/* --- Paragraphs and Lists --- */
+#content-area p, #content-area li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#content-area ul, #content-area ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/*-- page styles --*/
 
 .kyr img{
     width:200px;
     height: auto;
 }
 
-/* --- triage page --- */
-.triage {
-
+/* --- Content Tables (e.g., .triage, #warrants) --- */
+#content-area .triage, #content-area #warrants {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
 
-#victim.triage {
-
+#content-area .triage th, #content-area .triage td, 
+#content-area #warrants th, #content-area #warrants td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
 }
 
-/* --- witness page --- */
-/* maybe switch to action instead of witness */
-#witness.triage {
-
+#content-area .triage th, #content-area #warrants thead {
+    background-color: #eee;
+    font-weight: bold;
+    color: #8b0000;
 }
 
-/* --- safety page --- */
-#safety {
+/*-- Form Styles --*/
 
+/* --- Forms (e.g., .iceForms) --- */
+.iceForms {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.iceForms label {
+    display: inline-block;
+    min-width: 100px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.iceForms input[type="text"], .iceForms input[type="email"], .iceForms input[type="file"] {
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: calc(100% - 120px);
+    box-sizing: border-box;
+}
+
+.iceForms button[type="submit"] {
+    background-color: #8b0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.2s;
 }
 
 /* -- dynamic content area section --*/
