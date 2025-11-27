@@ -1,8 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+    color: #333;
+}
+
 /* -- header area w/ consistent response info -- */
+.hotline {
+    background-color: #696969; 
+    color: white; 
+    padding: 15px 10px; 
+    margin-bottom: 20px;
+}
+
+.hotline a {
+    color: #ffc107; 
+    font-weight: bold;
+}
+
 .running-header {
     width: 100%;
     table-layout: fixed;
-    background-color: #696969;
 }
 
 .img-header-cell {
@@ -14,16 +34,31 @@
 
 .salute-header-cell {
     width: 60%;
+    text-align: center; 
+    vertical-align: middle;
 }
 
-.salute-header-cell h1{
+.salute-header-cell h1 {
     text-align: center;
     color: #8b0000;
+    margin-top: 0;
+    font-size: 1.8em;
 }
 
-.salute-header-cell ul{
-    color: white;
-    font-size: larger;
+.salute-header-cell ul {
+    color: white; 
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; 
+}
+
+.salute-header-cell ul ul {
+    list-style-type: disc; 
+    margin-top: 5px;
+    padding-left: 20px;
+    font-size: 0.9em;
 }
 
 .header-image {
@@ -43,17 +78,22 @@
 }
 
 /* Buttons - Table and Cell Styling */
+.button-section {
+    padding: 0 10px;
+    margin-bottom: 20px;
+    background-color: #696969;
+
+}
+
 .kcs-buttons-table {
     width: 100%; 
     border-collapse: separate;
-    border-spacing: 10px 0;
+    border-spacing: 10px;
     table-layout: fixed;
-    background-color: #696969;
 }
 
-.kcs-cell {
-    width: 20%;
-    vertical-align: middle; 
+.kcs-button {
+    vertical-align: top;
     padding: 0; 
 }
 
@@ -63,51 +103,32 @@
     color: white;
     padding: 15px 5px; 
     border-radius: 8px;
-    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
     height: 100%;
-    position: relative; 
-}
-
-.button-icon {
-    font-size: 2em;
-    display: block;
-    margin-bottom: 5px;
+    box-shadow: 0 4px 6px black;
 }
 
 .button-text {
-    font-weight: bold;
     font-size: 1.1em;
-    text-transform: uppercase;
     line-height: 1.2;
-    display: block;
 }
 
 .kcs-button-summary {
     font-size: 0.8em;
-    color:black;
-    padding: 5px;
-    font-style:italic;
+    color:#8b0000;
+    padding: 5px 10px;
+    font-style: italic;
     vertical-align: top;
     word-wrap: break-word;
+    text-align: center;
 }
 
-/* --- Specific Button Colors --- */
-#button-kyr {
-    background-color:#8b0000;
-}
-#button-detention {
-    background-color: #8b0000;
-}
-#button-safety {
-    background-color: #8b0000;
-}
-#button-offline {
-    background-color: #8b0000;
-}
-
-#button-action {
-    background-color: #8b0000;
-}
+#button-kyr { background-color: #8b0000; }
+#button-detention { background-color: #8b0000; }
+#button-safety { background-color: #8b0000; }
+#button-offline { background-color: #8b0000; }
+#button-action { background-color: #8b0000; }
 
 /* --- kyr page ---*/
 .kyr {
